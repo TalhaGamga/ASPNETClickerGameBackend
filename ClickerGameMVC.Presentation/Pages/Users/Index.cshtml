@@ -1,0 +1,117 @@
+﻿@page
+@model ClickerGameMVC.Presentation.Pages.Users.IndexModel
+@{
+    ViewData["Title"] = "Users Index";
+}
+
+<h1>Users Info</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>GoldAmount</th>
+            <th>ClickCount</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model.Users)
+        {
+            <tr id="user-row-@user.Id">
+                <td>
+                    <span id="name-display-@user.Id">@user.Name</span>
+                    <input type="text" id="name-edit-@user.Id" class="form-control" value="@user.Name" style="display:none;" />
+                </td>
+                <td>
+                    <span id="email-display-@user.Id">@user.Email</span>
+                    <input type="text" id="email-edit-@user.Id" class="form-control" value="@user.Email" style="display:none;" />
+                </td>
+                <td>@user.GoldAmount</td>
+                <td>@user.ClickCount</td>
+                <td>
+                    <button class="btn btn-primary" id="edit-button-@user.Id" onclick="editUser(@user.Id)">Update</button>
+                    <button class="btn btn-success" id="save-button-@user.Id" style="display:none;" onclick="saveUser(@user.Id)">Save</button>
+                    <form method="post" asp-page-handler="Delete" style="display:inline;">
+                        <input type="hidden" name="id" value="@user.Id" />
+                        <input type="submit" value="Delete" class="btn btn-danger" />
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<hr />
+
+<h2>Create New User</h2>
+
+<form method="post" asp-page-handler="Create">
+    <div class="form-group">
+        <label asp-for="NewUser.Name" class="control-label"></label>
+        <input asp-for="NewUser.Name" class="form-control" />
+        <span asp-validation-for="NewUser.Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NewUser.Email" class="control-label"></label>
+        <input asp-for="NewUser.Email" class="form-control" />
+        <span asp-validation-for="NewUser.Email" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NewUser.Password" class="control-label"></label>
+        <input asp-for="NewUser.Password" class="form-control" />
+        <span asp-validation-for="NewUser.Password" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Create" class="btn btn-primary" />
+    </div>
+</form>
+
+@section Scripts {
+    <script>
+        function editUser(id) {
+            document.getElementById('name-display-' + id).style.display = 'none';
+            document.getElementById('email-display-' + id).style.display = 'none';
+            document.getElementById('name-edit-' + id).style.display = 'block';
+            document.getElementById('email-edit-' + id).style.display = 'block';
+            document.getElementById('edit-button-' + id).style.display = 'none';
+            document.getElementById('save-button-' + id).style.display = 'block';
+        }
+
+        function saveUser(id) {
+            var name = document.getElementById('name-edit-' + id).value;
+            var email = document.getElementById('email-edit-' + id).value;
+
+            var formData = new FormData();
+            formData.append('UpdatedUser.Id', id);
+            formData.append('UpdatedUser.Name', name);
+            formData.append('UpdatedUser.Email', email);
+
+            fetch('@Url.Page("/Users/Index", null, new { handler = "Update" })', {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]').value
+                }
+            }).then(response => {
+                if (response.ok) {
+                    document.getElementById('name-display-' + id).textContent = name;
+                    document.getElementById('email-display-' + id).textContent = email;
+                    document.getElementById('name-display-' + id).style.display = 'block';
+                    document.getElementById('email-display-' + id).style.display = 'block';
+                    document.getElementById('name-edit-' + id).style.display = 'none';
+                    document.getElementById('email-edit-' + id).style.display = 'none';
+                    document.getElementById('edit-button-' + id).style.display = 'block';
+                    document.getElementById('save-button-' + id).style.display = 'none';
+                } else {
+                    alert('Failed to update user.');
+                }
+            }).catch(error => {
+                console.error('Error:', error);
+            });
+        }
+    </script>
+}

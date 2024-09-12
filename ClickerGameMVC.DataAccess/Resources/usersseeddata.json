@@ -1,0 +1,157 @@
+[
+  {
+    "LetterId": "AdminTalha",
+    "FirstName": "Talha",
+    "LastName": "Gamga",
+    "Password": "AdminTalha.",
+    "Email": "talhagamgaadmin@gmail.com",
+    "Role": "Admin",
+    "UserStat": {
+      "GoldAmount": 0,
+      "ClickCount": 0
+    }
+  },
+
+  {
+    "LetterId": "UserTalha",
+    "FirstName": "Talha",
+    "LastName": "Gamga",
+    "Password": "UserTalha.",
+    "Email": "talhagamgauser@gmail.com",
+    "Role": "User",
+    "UserStat": {
+      "GoldAmount": 0,
+      "ClickCount": 0
+    }
+  },
+
+  {
+    "LetterId": "UserName_1",
+    "FirstName": "Name_1",
+    "LastName": "SurName_1",
+    "Password": "User_1.",
+    "Email": "User_1@gmail.com",
+    "Role": "User",
+    "UserStat": {
+      "GoldAmount": 0,
+      "ClickCount": 0
+    }
+  },
+
+  {
+    "LetterId": "UserName_1",
+    "FirstName": "Name_1",
+    "LastName": "SurName_1",
+    "Password": "User_1.",
+    "Email": "User_1@gmail.com",
+    "Role": "User",
+    "UserStat": {
+      "GoldAmount": 0,
+      "ClickCount": 0
+    }
+  },
+
+  {
+    "LetterId": "UserName_2",
+    "FirstName": "Name_2",
+    "LastName": "SurName_2",
+    "Password": "User_2.",
+    "Email": "User_2@gmail.com",
+    "Role": "User",
+    "UserStat": {
+      "GoldAmount": 0,
+      "ClickCount": 0
+    }
+  },
+
+  {
+    "LetterId": "UserName_3",
+    "FirstName": "Name_3",
+    "LastName": "SurName_3",
+    "Password": "User_3.",
+    "Email": "User_3@gmail.com",
+    "Role": "User",
+    "UserStat": {
+      "GoldAmount": 0,
+      "ClickCount": 0
+    }
+  },
+
+  {
+    "LetterId": "UserName_4",
+    "FirstName": "Name_4",
+    "LastName": "SurName_4",
+    "Password": "User_4.",
+    "Email": "User_4@gmail.com",
+    "Role": "User",
+    "UserStat": {
+      "GoldAmount": 0,
+      "ClickCount": 0
+    }
+  },
+
+  {
+    "LetterId": "UserName_5",
+    "FirstName": "Name_5",
+    "LastName": "SurName_5",
+    "Password": "User_5.",
+    "Email": "User_5@gmail.com",
+    "Role": "User",
+    "UserStat": {
+      "GoldAmount": 0,
+      "ClickCount": 0
+    }
+  },
+
+  {
+    "LetterId": "UserName_6",
+    "FirstName": "Name_6",
+    "LastName": "SurName_6",
+    "Password": "User_6.",
+    "Email": "User_6@gmail.com",
+    "Role": "User",
+    "UserStat": {
+      "GoldAmount": 0,
+      "ClickCount": 0
+    }
+  },
+
+  {
+    "LetterId": "UserName_7",
+    "FirstName": "Name_7",
+    "LastName": "SurName_7",
+    "Password": "User_7.",
+    "Email": "User_7@gmail.com",
+    "Role": "User",
+    "UserStat": {
+      "GoldAmount": 0,
+      "ClickCount": 0
+    }
+  },
+
+  {
+    "LetterId": "UserName_1",
+    "FirstName": "Name_1",
+    "LastName": "SurName_1",
+    "Password": "User_1.",
+    "Email": "User_1@gmail.com",
+    "Role": "User",
+    "UserStat": {
+      "GoldAmount": 0,
+      "ClickCount": 0
+    }
+  },
+
+  {
+    "LetterId": "UserName_8",
+    "FirstName": "Name_8",
+    "LastName": "SurName_8",
+    "Password": "User_8.",
+    "Email": "User_8@gmail.com",
+    "Role": "User",
+    "UserStat": {
+      "GoldAmount": 0,
+      "ClickCount": 0
+    }
+  }
+]

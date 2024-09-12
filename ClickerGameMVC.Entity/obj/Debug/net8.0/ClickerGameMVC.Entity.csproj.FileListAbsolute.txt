@@ -1,0 +1,15 @@
+C:\Users\talha.gamga\source\repos\ClickerGameMVC\ClickerGameMVC.Entity\bin\Debug\net8.0\ClickerGameMVC.Entity.deps.json
+C:\Users\talha.gamga\source\repos\ClickerGameMVC\ClickerGameMVC.Entity\bin\Debug\net8.0\ClickerGameMVC.Entity.runtimeconfig.json
+C:\Users\talha.gamga\source\repos\ClickerGameMVC\ClickerGameMVC.Entity\bin\Debug\net8.0\ClickerGameMVC.Entity.dll
+C:\Users\talha.gamga\source\repos\ClickerGameMVC\ClickerGameMVC.Entity\bin\Debug\net8.0\ClickerGameMVC.Entity.pdb
+C:\Users\talha.gamga\source\repos\ClickerGameMVC\ClickerGameMVC.Entity\obj\Debug\net8.0\ClickerGameMVC.Entity.csproj.AssemblyReference.cache
+C:\Users\talha.gamga\source\repos\ClickerGameMVC\ClickerGameMVC.Entity\obj\Debug\net8.0\ClickerGameMVC.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\talha.gamga\source\repos\ClickerGameMVC\ClickerGameMVC.Entity\obj\Debug\net8.0\ClickerGameMVC.Entity.AssemblyInfoInputs.cache
+C:\Users\talha.gamga\source\repos\ClickerGameMVC\ClickerGameMVC.Entity\obj\Debug\net8.0\ClickerGameMVC.Entity.AssemblyInfo.cs
+C:\Users\talha.gamga\source\repos\ClickerGameMVC\ClickerGameMVC.Entity\obj\Debug\net8.0\ClickerGameMVC.Entity.csproj.CoreCompileInputs.cache
+C:\Users\talha.gamga\source\repos\ClickerGameMVC\ClickerGameMVC.Entity\obj\Debug\net8.0\ClickerGameMVC.Entity.dll
+C:\Users\talha.gamga\source\repos\ClickerGameMVC\ClickerGameMVC.Entity\obj\Debug\net8.0\refint\ClickerGameMVC.Entity.dll
+C:\Users\talha.gamga\source\repos\ClickerGameMVC\ClickerGameMVC.Entity\obj\Debug\net8.0\ClickerGameMVC.Entity.pdb
+C:\Users\talha.gamga\source\repos\ClickerGameMVC\ClickerGameMVC.Entity\obj\Debug\net8.0\ClickerGameMVC.Entity.genruntimeconfig.cache
+C:\Users\talha.gamga\source\repos\ClickerGameMVC\ClickerGameMVC.Entity\obj\Debug\net8.0\ref\ClickerGameMVC.Entity.dll
+C:\Users\talha.gamga\source\repos\ClickerGameMVC\ClickerGameMVC.Entity\obj\Debug\net8.0\ClickerGameMVC.Entity.sourcelink.json

@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "Item_1",
+    "Type": "Upgrade click income",
+    "Price": 1,
+    "Description": "Earn more income per click",
+    "Level": 1
+  },
+
+  {
+    "Name": "Item_2",
+    "Type": "Upgrade click income",
+    "Price": 2,
+    "Description": "Earn more income per click",
+    "Level": 1
+  }
+]

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\ClickerGameMVC.Presentation.props" />
+</Project>
